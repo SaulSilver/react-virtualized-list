@@ -1,0 +1,57 @@
+{
+  "name": "react-virtualized-list",
+  "version": "0.1.0",
+  "description": "A lightweight React virtualized list library.",
+  "keywords": [
+    "react",
+    "virtualized-list",
+    "virtualization",
+    "windowing",
+    "list"
+  ],
+  "license": "MIT",
+  "author": "Hatem Houssein",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaulSilver/react-virtualized-list.git"
+  },
+  "homepage": "https://github.com/SaulSilver/react-virtualized-list#readme",
+  "bugs": {
+    "url": "https://github.com/SaulSilver/react-virtualized-list/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "react": "^19.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
