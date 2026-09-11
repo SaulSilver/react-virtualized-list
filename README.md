@@ -5,13 +5,13 @@ A lightweight React virtualized list library for fixed-height rows.
 ## Install
 
 ```bash
-npm install react-virtualized-list
+npm install @saulsilver/react-virtualized-list
 ```
 
 ## Usage
 
 ```tsx
-import { VirtualList } from "react-virtualized-list";
+import { VirtualList } from "@saulsilver/react-virtualized-list";
 
 export function Example() {
   return (

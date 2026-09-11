@@ -1,5 +1,5 @@
 {
-  "name": "react-virtualized-list",
+  "name": "@saulsilver/react-virtualized-list",
   "version": "0.1.0",
   "description": "A lightweight React virtualized list library.",
   "keywords": [
