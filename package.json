@@ -39,6 +39,9 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench": "vitest bench",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run typecheck && npm run build"
   },
@@ -47,7 +50,10 @@
   },
   "devDependencies": {
     "@types/react": "^19.1.0",
+    "@testing-library/react": "^16.3.0",
+    "jsdom": "^26.1.0",
     "react": "^19.1.0",
+    "vitest": "^2.1.9",
     "tsup": "^8.5.0",
     "typescript": "^5.9.0"
   },
